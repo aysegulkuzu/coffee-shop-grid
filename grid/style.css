@@ -1,0 +1,82 @@
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fdf6f0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 170px 150px 130px;
+    grid-template-areas: 
+        "header header header"
+        "aside main main"
+        "aside items-1 items-2";
+    gap: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+.container > * {
+    background-color: #a86c4b;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.header {
+    grid-area: header;
+
+}
+.header h1 {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.header h1:hover {
+    color: #ffe5b4; 
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); 
+    cursor: pointer;
+}
+.aside{
+    grid-area: aside;
+}
+.main{
+    grid-area: main;
+}
+.items-1{
+    grid-area:items-1;
+}
+.items-2{
+    grid-area:items-2;
+}
+.right-box{
+    grid-area: right-box;
+}
+.main li:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.aside p:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+.items-2 p:hover{
+    color: bisque; 
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+.fa.fa-coffee{
+    margin-right: 8px;
+    color: black; 
+}
+.fa.fa-location-arrow{
+    margin-right: 8px;
+    color: black; 
+}
+.fab.fa-instagram {
+    margin-right: 8px;
+    color: black; 
+}
+
+    
+
+
